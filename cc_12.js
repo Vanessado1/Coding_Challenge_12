@@ -47,7 +47,5 @@ function addCustomerCard(customerName) {
     });
     customerSection.appendChild(customerCard);
 }
-// attached a click event listener 
-customerSection.addEventListener('click', function() {
-    console.log('Customer section clicked');
-});
+addCustomerCard('Julie');
+addCustomerCard('Jake');
