@@ -32,3 +32,22 @@ function addInventoryItem(productName) {
     });
     inventoryList.appendChild(listItem);
 }
+
+// Task 4 Business Customer Section 
+// select parent container 
+const customerSection = document.getElementById('customerSection');
+// function to add a new customer card 
+function addCustomerCard(customerName) {
+    const customerCard = document.createElement('div');
+    customerCard.setAttribute('class', 'customer-card');
+    customerCard.textContent = customerName;
+    customerCard.addEventListener('click', (event) => {
+        console.log("Customer card clicked");
+        event.stopPropagation();
+    });
+    customerSection.appendChild(customerCard);
+}
+// attached a click event listener 
+customerSection.addEventListener('click', function() {
+    console.log('Customer section clicked');
+});
